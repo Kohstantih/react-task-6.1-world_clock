@@ -1,0 +1,189 @@
+#root {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-box_wrapper {
+  width: 40%;
+}
+
+.label_item {
+  display: block;
+
+  margin-bottom: 5px;
+}
+
+.input_wrapper {
+  width: 170px;
+  height: 40px;
+
+  border: 2px solid rgb(73, 141, 73);
+  border-radius: 10px;
+  background-color: rgb(244, 244, 217);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.input {
+  width: 100%;
+  text-align: center;
+
+  background-color: inherit;
+  border: none;
+
+  padding: 5px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.button {
+  height: 40px;
+  align-self: flex-end;
+
+  border: 2px solid rgb(73, 141, 73);
+  border-radius: 10px;
+  background-color: rgb(172, 234, 172);
+
+  padding: 5px;
+
+  transition: all;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  outline: 2px solid rgb(57, 117, 57);
+  background-color: rgb(112, 231, 112);
+}
+
+.button:active {
+  outline: none;
+  background-color: rgb(112, 231, 112);
+}
+
+.clock-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.clock_wrapper {
+  margin-top: 20px;
+}
+
+.clock {
+  position: relative;
+
+  width: 152px;
+  height: 152px;
+
+  color: rgb(54, 108, 54);
+
+  outline: 4px solid rgb(73, 141, 73);
+  border-radius: 50%;
+
+  background-color: rgb(244, 244, 217);
+
+  margin-top: 5px;
+}
+
+.btn_del-clock {
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+
+  font-size: 1rem;
+
+  position: absolute;
+  top: -5px; right: -5px;
+
+  cursor: pointer;
+}
+
+.btn_del-clock:hover {
+  font-size: 1.1rem;
+}
+
+.btn_del-clock:active {
+  font-size: 1rem;
+}
+
+.hour-hand {
+  width: 4px;
+  height: 40px;
+
+  position: absolute;
+  left: 75px; top: 36px;
+
+  background-color: rgb(54, 108, 54);
+
+  transform-origin: bottom;
+}
+
+.minute-hand {
+  width: 2px;
+  height: 56px;
+
+  position: absolute;
+  left: 76px; top: 20px;
+
+  background-color: rgb(54, 108, 54);
+
+  transform-origin: bottom;
+}
+
+.second-hand {
+  width: 1px;
+  height: 70px;
+
+  position: absolute;
+  left: 76px; top: 6px;
+
+  background-color: rgb(255, 0, 0);
+
+  transform-origin: bottom;
+}
+
+.center {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+  background-color: rgb(54, 108, 54);
+
+  position: absolute;
+  left: 70px; top: 70px;
+}
+
+.twelve-digit {
+  position: absolute;
+  left: 69px; top: -3px;
+}
+
+.three-digit {
+  position: absolute;
+  right: 3px; top: 63px;
+}
+
+.six-digit {
+  position: absolute;
+  left: 72px; bottom: -2px;
+}
+
+.nine-digit {
+  position: absolute;
+  left: 2px; top: 63px;
+}
